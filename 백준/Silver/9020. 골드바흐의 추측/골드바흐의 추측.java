@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		int N = 10000;
+		int N = 10000; // 범위
 
 		boolean check[] = new boolean[N + 1];
 		for (int i = 2; i <= N; i++) {
@@ -19,7 +19,7 @@ public class Main {
 		}
 		int T = sc.nextInt(); // n
 
-		for (int i = 0; i < T; i++) {
+		for (int i = 0; i < T; i++) { // t값 임력
 			int n = sc.nextInt(); // n
 			int tmp = n / 2;
 			for (int j = tmp; j >= 2; j--) {
