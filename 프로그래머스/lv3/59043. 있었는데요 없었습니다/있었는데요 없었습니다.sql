@@ -1,0 +1,9 @@
+-- 코드를 입력하세요
+SELECT AI.ANIMAL_ID, AI.NAME
+FROM ANIMAL_INS AI
+JOIN ANIMAL_OUTS AO ON AI.ANIMAL_ID = AO.ANIMAL_ID
+WHERE AI.DATETIME > AO.DATETIME
+ORDER BY AI.DATETIME;
+
+# 두 테이블을 비교하는데
+# 보호시작일 보다 > 입양일이 더 빠른 동물의 아이디와 이름 조회
