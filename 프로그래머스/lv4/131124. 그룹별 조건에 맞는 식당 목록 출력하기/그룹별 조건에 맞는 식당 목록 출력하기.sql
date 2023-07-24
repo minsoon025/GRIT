@@ -8,5 +8,6 @@ WHERE RR.MEMBER_ID = (SELECT MEMBER_ID
                       ORDER BY COUNT(MEMBER_ID) DESC 
                      LIMIT 1
                      )
-ORDER BY 3,2
+                     
+ORDER BY REVIEW_DATE, REVIEW_TEXT#텍스트, 리뷰
 ;
